@@ -1,0 +1,21 @@
+@import '../../constants.scss';
+
+.products {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &__item {
+        margin: 0 0 $fieldsetPadding 0;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.product {
+    flex-grow: 1;
+}

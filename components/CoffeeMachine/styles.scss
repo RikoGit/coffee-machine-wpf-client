@@ -1,0 +1,14 @@
+@import '../../constants.scss';
+
+.coffeemachine {
+    padding: 0 $mainPadding $mainPadding;
+    grid-area: coffeemachine;
+
+    &__fieldset {
+        min-height: 100%;
+    }
+    &__balance {
+        color: $legendColor;
+        font-size: 22px;
+    }
+}

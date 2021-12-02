@@ -1,0 +1,39 @@
+@import '../../constants.scss';
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+.button {
+    padding: 14px 28px;
+    display: block;
+    min-height: 52px;
+    min-width: 150px;
+    border-radius: $mainBorderRadius;
+    transition: all 0.1s ease-in-out;
+    background: $buttonBgColor;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:disabled {
+        background: #f3f3f4;
+        color: #868b95;
+        border: none;
+        cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover,
+    &:active,
+    &:focus {
+        color: #000;
+        background: $mainColor;
+    }
+}

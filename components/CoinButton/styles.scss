@@ -1,0 +1,25 @@
+@import '../../constants.scss';
+
+.button {
+    margin: 0 0 $fieldsetPadding 0;
+    padding: 3px 0;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    cursor: pointer;
+    background: #fff;
+    border-radius: $mainBorderRadius;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: $mainColor;
+    }
+    &:disabled {
+        background: none !important;
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}

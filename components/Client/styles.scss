@@ -1,0 +1,12 @@
+@import '../../constants.scss';
+
+.client {
+    padding: 0 $mainPadding $mainPadding;
+    grid-area: client;
+
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+}

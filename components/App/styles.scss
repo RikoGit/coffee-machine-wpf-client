@@ -1,0 +1,25 @@
+@import '../../constants.scss';
+
+.main {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 30%;
+    grid-template-areas:
+        'header header'
+        'coffeemachine client';
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 30%;
+
+    &__header {
+        padding: 0 $mainPadding;
+        grid-area: header;
+    }
+}
+fieldset {
+    padding: 0 $fieldsetPadding $fieldsetPadding;
+    border-radius: $mainBorderRadius;
+    border: 1px solid $mainColor;
+}
+legend {
+    color: $legendColor;
+}
